@@ -1,0 +1,48 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROSPERA+</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PROSPERA+</h1>
+        <p><u><b>Invest Smart, Not Fast!</b></u></p>
+        <form id="stock-form">
+            <label for="open">Open Price:</label>
+            <input type="number" id="open" name="Open" step="0.01" required>
+
+            <label for="high">High Price:</label>
+            <input type="number" id="high" name="High" step="0.01" required>
+
+            <label for="low">Low Price:</label>
+            <input type="number" id="low" name="Low" step="0.01" required>
+
+            <label for="close">Close Price:</label>
+            <input type="number" id="close" name="Close" step="0.01" required>
+
+            <label for="volume">Volume:</label>
+            <input type="number" id="volume" name="Volume" required>
+
+            <button type="submit">Get Recommendation</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Recommendation:</h2>
+            <p id="score"></p>
+            <p id="suggestion"></p>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
